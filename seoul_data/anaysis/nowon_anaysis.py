@@ -76,7 +76,7 @@ for file_name in sorted(os.listdir(folder_path)):
         dong_single_total_list.append(dong_single_total_df)
 
 combined_dong_group = pd.concat(dong_group_list)
-output_file_path = "/Users/ranking/Desktop/seoul_data/combined_dong_group.xlsx"
+output_file_path = "./seoul_data/anaysis/combined_dong_group.xlsx"
 combined_dong_group.to_excel(output_file_path, index=True)
 
 print(combined_dong_group)
@@ -145,7 +145,7 @@ plt.show()
 
 ##########################################################################
 
-gdf = gpd.read_file("/Users/ranking/Desktop/seoul_data/img/seoul_adr.shp", engine='pyogrio')
+gdf = gpd.read_file("./seoul_data/img/seoul_adr.shp", engine='pyogrio')
 
 
 filter_gdf = gdf[gdf['adm_cd'].isin(["1111051","1111052","1111053","1111056", "1111058", "1111059", "1111060",
