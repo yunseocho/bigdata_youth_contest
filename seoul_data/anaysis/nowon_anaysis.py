@@ -9,7 +9,7 @@ import pyogrio
 import shapefile
 #import gdal
 
-folder_path = '/Users/ranking/Desktop/seoul_data/seoul_lifestyle'
+folder_path = './seoul_data/seoul_lifestyle_data'
 
 def process_file(file_path):
 
@@ -82,7 +82,7 @@ combined_dong_group.to_excel(output_file_path, index=True)
 print(combined_dong_group)
 
 
-july_2024 = process_file('/Users/ranking/Desktop/seoul_data/seoul_lifestyle/202407.xlsx')
+july_2024 = process_file('./seoul_data/seoul_lifestyle_data/202407.xlsx')
 print(july_2024)
 ###########################################################################
 combined_dong_group.columns
@@ -145,7 +145,7 @@ plt.show()
 
 ##########################################################################
 
-gdf = gpd.read_file("/Users/ranking/Desktop/seoul_data/seoul_adr.shp", engine='pyogrio')
+gdf = gpd.read_file("/Users/ranking/Desktop/seoul_data/img/seoul_adr.shp", engine='pyogrio')
 
 
 filter_gdf = gdf[gdf['adm_cd'].isin(["1111051","1111052","1111053","1111056", "1111058", "1111059", "1111060",
