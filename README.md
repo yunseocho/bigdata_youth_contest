@@ -1,4 +1,8 @@
-# ![nowon](https://github.com/yunseocho/bigdata_youth_contest/blob/main/seoul_data/nowon_mark.png)Nowon Big Data Anaysis 
+# 
+<h1>
+  <img src="https://github.com/yunseocho/bigdata_youth_contest/blob/main/seoul_data/nowon_mark.png" alt="nowon" width="50" />
+  Nowon Big Data Analysis
+</h1>
 2024 노원구 빅데이터 공모전에 노원구 청년을 위한 청년정책 아이디어 제안을 뒷받침하기 위해 사용한 데이터, 분석 코드 및 결과 시각화입니다.   
 
 ## Idea
